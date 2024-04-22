@@ -1,0 +1,53 @@
+{
+  "Paisagem": [
+    {
+      "id": 1,
+      "nome": "Montanhas nevadas",
+      "lugar": "Alpes Suíços",
+      "tipo": "Paisagem natural",
+      "link": "https://vocenaneve.com.br/wp-content/uploads/2022/07/matterhorn-2.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Praias tropicais",
+      "lugar": "Bora Bora, Polinésia Francesa",
+      "tipo": "Paisagem natural",
+      "link": "https://destinostopparavisitar.com/wp-content/uploads/2021/04/10-Paraisos-Tropicais-que-Voce-Precisa-Visitar-Antes-de-Morrer.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Deserto de areia",
+      "lugar": "Deserto do Saara, Norte da África",
+      "tipo": "Paisagem natural",
+      "link": "https://s4.static.brasilescola.uol.com.br/be/2021/11/deserto.jpg"
+    },
+    {
+      "id": 4,
+      "nome": "Floresta tropical",
+      "lugar": "Floresta Amazônica, América do Sul",
+      "tipo": "Paisagem natural",
+      "link": "https://static.mundoeducacao.uol.com.br/mundoeducacao/2023/10/floresta-amazonica.jpg"
+    },
+    {
+      "id": 5,
+      "nome": "Fiordes ",
+      "lugar": "Noruega ",
+      "tipo": "Paisagem natural",
+      "link": "https://super.abril.com.br/wp-content/uploads/2018/07/573a2b8b0e2163457503a919fiordes_site.jpeg"
+    },
+    {
+      "id": 6,
+      "nome": "Cânions profundos",
+      "lugar": "Grand Canyon, Estados Unidos",
+      "tipo": "Paisagem natural",
+      "link": "https://s3.static.brasilescola.uol.com.br/be/2020/08/canioni-itaimbezinho.jpg"
+    },
+    {
+      "id": 8,
+      "nome": "Vales verdejantes",
+      "lugar": "Vale de Kathmandu, Nepal",
+      "tipo": "Paisagem natural",
+      "link": "https://eueeles.files.wordpress.com/2023/01/campinasverdejantes.jpg"
+    }
+  ]
+}

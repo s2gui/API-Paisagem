@@ -1,0 +1,319 @@
+/* Reset de margens e altura do corpo e html */
+body,
+html {
+    height: 110%;
+    margin: 0;
+    background-color: #b9ccdf;
+}
+
+
+
+/* Parte superior da tela */
+.tela {
+    width: 100%;
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 20px 20px 60px #0e01019c;
+}
+
+
+
+/* Logotipo */
+.tela img {
+    width: 65px;
+    height: 60px;
+    background-color: #151821;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-left: 25px;
+}
+
+
+
+/* nomeSite */
+.nomeSite {
+    width: 13%;
+    height: 60px;
+    background-color: #151821;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-top: -5px;
+}
+
+
+
+/* Estilo do nomeSite */
+.nomeSite p {
+    font-size: 27px;
+    margin-top: 15px;
+    text-align: left;
+    color: white;
+}
+
+
+
+/* Botões Adicionar, Editar e Deletar */
+.adiciona,
+.deletar,
+.editar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 17px;
+    box-shadow: 20px 20px 60px #0e01019c;
+    width: 220px;
+    padding: 15px;
+    cursor: pointer;
+    margin-left: 10%;
+    background-color: #151821;
+}
+
+
+
+/* Botão Adicionar Colocado Mais Pra Esquerda*/
+.adiciona {
+    margin-left: 20%;
+}
+
+
+
+/* Botões Adicionar, Editar e Deletar em estado de hover */
+.adiciona,
+.editar,
+.deletar {
+    color: white;
+    transition: all 0.3s ease;
+}
+
+
+
+/* Botões Adicionar, Editar e Deletar em estado de hover */
+.adiciona:hover,
+.editar:hover,
+.deletar:hover,
+.exibir:hover {
+    width: 230px;
+    font-size: 20px;
+}
+
+/* Modal */
+.modal,
+.modal-editar,
+.modal-exibir,
+.modal-deletar {
+    width: 25%;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 25px;
+    display: block;
+    background-image: url("/img/tela.png");
+    color: #ffffff;
+}
+
+.modal-deletar {
+    backdrop-filter: blur(10px);
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+/* Janela modal */
+.janela-modal,
+.janela-modal-editar,
+.janela-modal-deletar,
+.janela-modal-exibir {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.493);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+
+
+/* Modal Form*/
+.modal form,
+.modal-editar form {
+    width: 95%;
+}
+
+
+
+/* Modal input*/
+.modal input[type="text"],
+.modal input[type="number"],
+.modal-editar input[type="text"],
+.modal-editar input[type="number"] {
+    font-size: 20px;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.modal-deletar input {
+    padding-top: 1px;
+    text-align: center;
+    font-size: 35px;
+    width: 200px;
+}
+
+
+
+/* Fechar */
+.fechar {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #151821;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+
+/* Fechar Hover*/
+.fechar:hover {
+    width: 30px;
+    font-size: 25px;
+    transition: all 0.3s ease;
+}
+
+
+
+/* Arrumar */
+/* Janela Modal Fechar */
+.janela-modal .fechar,
+.janela-modal-editar .fechar,
+.janela-modal-deletar .fechar,
+.janela-modal-exibir .fechar {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #151821;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+.janela-modal .fechar {
+    top: 235px;
+    right: +679px;
+}
+.janela-modal-editar .fechar {
+    top: 195px;
+    right: +680px;
+}
+
+.janela-modal-deletar .fechar {
+    top: -15px;
+    right: -15px;
+}
+
+.janela-modal-exibir .fechar {
+    top: 305px;
+    right: 680px;
+}
+
+
+
+/* Janela Modal Abrir*/
+.janela-modal.abrir,
+.janela-modal-editar.abrir,
+.janela-modal-deletar.abrir,
+.janela-modal-exibir.abrir {
+    display: flex;
+}
+
+
+
+/* Input Botao*/
+input[class="botao-Add"],
+input[class="botao-Editar"],
+input[class="botao-deletar"] {
+    background-color: #151821;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+input[class="botao-Add"] {
+    margin-left: 25%;
+}
+
+input[class="botao-Editar"] {
+    margin-left: 30%;
+}
+
+input[class="botao-deletar"] {
+    width: 250px;
+    padding: 15px 20px;
+    margin-top: 50%;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+.botao-Add:hover,
+.botao-Editar:hover,
+.botao-deletar:hover {
+    font-size: 28px;
+    transition: all 0.3s ease;
+}
+
+
+
+#paisagem-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 4%;
+    margin-left: 9%;
+}
+
+#paisagem-list li {
+    margin-right: 2%;
+    margin-top: 2%;
+    background-color: #151821;
+    padding: 10px;
+    border-radius: 7px;
+    width: 350px;
+    box-shadow: 20px 20px 60px #0e01019c;
+}
+
+#paisagem-list:hover {
+    cursor: pointer;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+* {
+    font-family: Helvetica, Sans-Serif;
+}
+
+::selection {
+    background-color: rgb(17, 0, 255);
+    color: rgb(255, 255, 255);
+}

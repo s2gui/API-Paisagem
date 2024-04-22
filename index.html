@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paisagem</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/scriptPaisagem.js"></script>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header class="tela">
+
+        <!-- Logotipo e nome do site -->
+        <a href="./index.html"><img src="./img/logo.png" width="77" height="75px"> </a>
+
+        <div class="nomeSite">
+            <p> API de Paisagem</p>
+        </div>
+
+        <div onclick="abrirModalAdd()" class="adiciona"> Adicionar Paisagem </div>
+        <div onclick="abrirModalEditar()" class="editar"> Editar Paisagem </div>
+        <div onclick="abrirModalDeletar()" class="deletar"> Deletar Paisagem </div>
+        <div onclick="abrirModalExibir()" class="exibir"> </div>
+
+        <!-- Modal para Adicionar Paisagem -->
+        <div class="janela-modal" id="janela-modal">
+            <div class="modal">
+                <button class="fechar" id="fechar">X</button>
+
+                <form id="paisagem-form">
+
+                    <label for="nome"> Nome </label>
+                    <input type="text" id="nome" placeholder="Nome da Paisagem..." required>
+
+                    <label for="lugar"> Lugar </label>
+                    <input type="text" id="lugar" placeholder="Lugar da Paisagem..." required>
+
+                    <label for="tipo"> Tipo </label>
+                    <input id="text" type="text" name="searchbar" placeholder="Natural, cultural, antrópica...">
+
+                    <label for="link"> Link da Imagem </label>
+                    <input type="text" id="link" placeholder="Endereço da Imagem..." onkeyup="search()" required>
+
+
+                    <div class="botaoAdd">
+                        <input type="submit" class="botao-Add" value="Adicionar Paisagem">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+        <!-- Modal para Editar Paisagem -->
+        <div class="janela-modal-editar" id="janela-modal-editar">
+            <div class="modal-editar">
+                <button class="fechar" id="fechar">X</button>
+
+                <form id="paisagem-editar">
+
+                    <label for="id"> Id </label>
+                    <input type="number" id="id" placeholder="Id da Paisagem..." required>
+
+                    <label for="nome"> Nome </label>
+                    <input type="text" id="nome" placeholder="Nome da Paisagem..." required>
+
+                    <label for="lugar"> Lugar </label>
+                    <input type="text" id="lugar" placeholder="Lugar da Paisagem..." required>
+
+                    <label for="tipo"> Tipo </label>
+                    <input id="tipo" type="text" name="searchbar" placeholder="Natural, cultural, antrópica...">
+
+                    <label for="link"> Link da Imagem </label>
+                    <input type="text" id="link" placeholder="Endereço da Imagem..." onkeyup="search()" required>
+
+                    <div class="botaoEditar">
+                        <input type="submit" class="botao-Editar" value="Editar Paisagem">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+        <!-- Modal para Deletar Paisagem -->
+        <div class="janela-modal-deletar" id="janela-modal-deletar">
+            <div class="modal-deletar">
+                <button class="fechar" id="fechar">X</button>
+
+                <form id="paisagem-deletar">
+                    <label for="id"> Id </label>
+                    <input type="number" id="id-deletar" placeholder="Id..." required>
+                    <div class="botaodeletar">
+                        <input type="submit" class="botao-deletar" value="Deletar Paisagem">
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </header>
+
+      <!-- Modal para Exibir paisagens -->
+    <div class="imagens">
+        <div class="janela-modal-exibir" id="janela-modal-exibir">
+            <div class="modal-exibir">
+                <button class="fechar" id="fechar">X</button>
+
+
+            </div>
+        </div>
+
+        <ul id="paisagem-list"></ul>
+
+    </div>
+
+</body>
+
+</html>
