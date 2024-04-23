@@ -104,7 +104,6 @@ html {
 .modal-exibir,
 .modal-deletar {
     width: 25%;
-    height: auto;
     padding: 20px;
     border-radius: 20px;
     font-size: 25px;
@@ -137,7 +136,6 @@ html {
     justify-content: center;
     z-index: 9999;
 }
-
 
 
 /* Modal Form*/
