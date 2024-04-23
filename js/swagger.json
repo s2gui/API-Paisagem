@@ -1,0 +1,140 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API de Paisage,",
+    "version": "1.0.0",
+    "description": "Essa API foi....."
+  },
+  "paths": {
+    "/paisagem": {
+      "get": {
+        "summary": "Obter a lista de paisagem",
+        "responses": {
+          "200": {
+            "description": "Lista de paisagem retornada com sucesso"
+          }
+        }
+      },
+      "post": {
+        "summary": "Criar uma nova paisagem",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/paisagem"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Dados completos"
+          },
+          "400": {
+            "description": "Dados incompletos"
+          }
+        }
+      }
+    },
+    "/paisagem/{id}": {
+      "get": {
+        "summary": "Obter informações de um paisagem pelo ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Informações do paisagem retornadas com sucesso"
+          },
+          "404": {
+            "description": "Paisagem não encontrado"
+          }
+        }
+      },
+      "put": {
+        "summary": "Atualizar informações de um usuário pelo ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/paisagem"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Atualização feita com sucesso!"
+          },
+          "404": {
+            "description": "Não encontrado"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Excluir um usuário pelo ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Paisagem excluída!"
+          },
+          "404": {
+            "description": "Paisagem não encontrado"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Usuario": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "nome": {
+            "type": "string"
+          },
+          "lugar": {
+            "type": "string"
+          },
+          "tipo": {
+            "type": "string"
+          },
+          "link": "string"
+        }
+
+        }
+      }
+    }
+  }
+

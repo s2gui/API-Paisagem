@@ -92,6 +92,7 @@
     "simple-update-notifier": "^2.0.0",
     "statuses": "^2.0.1",
     "supports-color": "^5.5.0",
+    "swagger-ui-express": "^5.0.0",
     "to-regex-range": "^5.0.1",
     "toidentifier": "^1.0.1",
     "touch": "^3.1.0",
@@ -102,7 +103,6 @@
     "vary": "^1.1.2",
     "yallist": "^4.0.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"

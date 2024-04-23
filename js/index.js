@@ -4,6 +4,12 @@ const fs = require('fs');
 const cors = require('cors');
 
 const server = express();
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
+server.use(express.json());
+server.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
+
 server.use(cors());
 server.use(express.json());
 
@@ -60,7 +66,7 @@ server.put('/paisagem/:id', (req, res) => {
     }
 
     dados.Paisagem[indicePaisagem].nome = atualizarPaisagem.nome ||
-    dados.Paisagem[indicePaisagem].nome
+        dados.Paisagem[indicePaisagem].nome
 
     dados.Paisagem[indicePaisagem].lugar = atualizarPaisagem.lugar ||
         dados.Paisagem[indicePaisagem].lugar

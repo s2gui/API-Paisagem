@@ -48,6 +48,13 @@
       "lugar": "Vale de Kathmandu, Nepal",
       "tipo": "Paisagem natural",
       "link": "https://eueeles.files.wordpress.com/2023/01/campinasverdejantes.jpg"
+    },
+    {
+      "id": 8,
+      "nome": "Monte Everest",
+      "lugar": "Cordilheira do Himalaia, fronteira entre o Nepal e a região autônoma do Tibete, China",
+      "tipo": "Montanha",
+      "link": "https://s4.static.brasilescola.uol.com.br/be/2023/04/vista-do-monte-everest.jpg"
     }
   ]
 }
