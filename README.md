@@ -3,7 +3,7 @@
 * cd js
 * npm start
 
-### Teste de Add Paisagem
+### Teste para Add Paisagem
 * Nome: Monte Everest
 * Lugar: Cordilheira do Himalaia, fronteira entre o Nepal e a região autônoma do Tibete, China
 * Tipo: Montanha
