@@ -1,9 +1,9 @@
-#Inicialização
+# Inicialização
 cd root
 cd js
 npm start
 
-#Teste de Add Paisagem
+# Teste de Add Paisagem
 Nome: Monte Everest
 <<<<<<< HEAD
 Lugar: Cordilheira do Himalaia, fronteira entre o Nepal e a região autônoma do Tibete, China
