@@ -1,7 +1,7 @@
 # Inicialização
-cd root
-cd js
-npm start
+* cd root
+* cd js
+* npm start
 
 # Teste de Add Paisagem
 Nome: Monte Everest
