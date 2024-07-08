@@ -1,5 +1,4 @@
 ### Inicialização
-* cd root
 * cd js
 * npm start
 
